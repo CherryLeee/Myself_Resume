@@ -1,0 +1,1 @@
+["img/pointer.png","img/turntable.png","img/turntable-bg.jpg","img/turnTB.png","img/sky.gif","img/timg2.jpg","img/temg4.png","img/walk.gif","img/pingpang.jpg","img/bg1.jpg","img/bg5.jpg"]

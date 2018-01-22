@@ -1,0 +1,312 @@
+@import "reset.min.css";
+
+html {
+  font-size: 100px;
+}
+
+html, body {
+  background: #f4f4f4;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mainBox {
+  background: #595959;
+  height: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.slogan {
+  padding-top: .5rem;
+  height: 1rem;
+  width: 100%;
+
+  .title {
+    font-size: .36rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #ffffff;
+    text-shadow: .01rem .02rem 0 #ccc;
+    letter-spacing: .06rem;
+  }
+}
+
+.bayMax {
+  margin: 0 auto;
+  height: 8rem;
+  padding-top: .5rem;
+  overflow: hidden;
+
+  transition: .3s;
+  animation: joinMove 1s ease-in-out both;
+
+  .head {
+    width: 1*1.5rem;
+    height: .64*1.5rem;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: 0 auto -.2*1.5rem;
+    border-bottom: .08rem solid #e0e0e0;
+    //z-index: 100;
+    position: relative;
+
+    .left_eye, .right_eye {
+      width: .11*1.5rem;
+      height: .13*1.5rem;
+      background: #282828;
+      border-radius: 50%;
+      position: relative;
+      top: .3*1.5rem;
+      left: .27*1.5rem;
+
+      transform: rotate(8deg);
+    }
+
+    .right_eye {
+      transform: rotate(-8deg);
+      left: .69*1.5rem;
+      top: .17*1.5rem;
+    }
+
+    .mouth {
+      width: .38*1.5rem;
+      height: .02*1.5rem;
+      background: #282828;
+      position: relative;
+      left: .34*1.5rem;
+      top: .1*1.5rem;
+    }
+  }
+
+  .stature {
+    margin: 0 auto;
+    height: 2*1.5rem;
+    width: 1.8*1.5rem;
+    background: #ffffff;
+    border-radius: 47%;
+    border: .05rem solid #e0e0e0;
+    border-top: none;
+    //z-index:1;
+
+    .heart {
+      height: .25*1.5rem;
+      width: .25*1.5rem;
+      border-radius: 50%;
+      position: relative;
+      right: -1.15*1.5rem;
+      top: .4*1.5rem;
+      z-index: 111;
+      border: .02rem solid #ccc;
+
+      box-shadow: .02rem .05rem .02rem #ccc inset;
+    }
+  }
+
+  .belly {
+    height: 3*1.5rem;
+    width: 2.45*1.5rem;
+    //z-index: 5;
+    border-radius: 47%;
+    border: .1rem solid #e0e0e0;
+    border-top: none;
+    background: #ffffff;
+    margin: -1.4*1.5rem auto 0;
+
+    .cover {
+      width: 1.9*1.5rem;
+      height: 1.5*1.5rem;
+      background: #ffffff;
+      margin: 0 auto;
+      position: relative;
+      top: -.2*1.5rem;
+      border-radius: 50%;
+      z-index: -3;
+    }
+  }
+
+  .left_arm, .right_arm {
+    height: 2.7*1.5rem;
+    width: 1.2*1.5rem;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: -3.5*1.5rem;
+    left: -1*1.5rem;
+    transform: rotate(20deg);
+  }
+
+  .left_arm {
+    border-left: .07rem solid #e0e0e0;
+
+    .l_big_finger {
+      height: .5*1.5rem;
+      width: .2*1.5rem;
+      border-radius: 50%;
+      background: #fff;
+      position: relative;
+      top: 3.79rem;
+      left: .5*1.5rem;
+      transform: rotate(-50deg);
+    }
+
+    .l_small_finger {
+      height: .35*1.5rem;
+      width: .15*1.5rem;
+      border-radius: 50%;
+      background: #fff;
+      position: relative;
+      top: 1.95*1.5rem;
+      left: .66*1.5rem;
+      transform: rotate(-40deg);
+    }
+  }
+
+  .right_arm {
+    transform: rotate(-20deg);
+    left: 1*1.5rem;
+    top: -6.2*1.5rem;
+    border-right: .07rem solid #e0e0e0;
+
+    .r_big_finger {
+      height: .5*1.5rem;
+      width: .2*1.5rem;
+      border-radius: 50%;
+      background: #fff;
+      position: relative;
+      top: 2.5*1.5rem;
+      left: .5*1.5rem;
+      transform: rotate(50deg);
+    }
+
+    .r_small_finger {
+      height: .35*1.5rem;
+      width: .15*1.5rem;
+      border-radius: 50%;
+      background: #fff;
+      position: relative;
+      transform: rotate(40deg);
+      top: 1.95*1.5rem;
+      left: .37*1.5rem;
+    }
+  }
+
+  .left_leg, .right_leg {
+    height: 1.7*1.5rem;
+    width: .9*1.5rem;
+    border-radius: 40% 30% .1rem 45%;
+    background: #fff;
+    position: relative;
+    top: -6.4*1.5rem;
+    left: -.46*1.5rem;
+    transform: rotate(-1deg);
+    margin: 0 auto;
+    border-bottom: .1rem solid #e4e4e4;
+  }
+
+  .left_leg {
+    animation: l_runningMove 1s linear infinite both;
+  }
+
+  .right_leg {
+    background: #fff;
+    border-radius: 30% 40% 45% .1rem;
+    margin: 0 auto;
+    top: -8.17*1.5rem;
+    left: .5*1.5rem;
+    transform: rotate(1deg);
+
+    animation: r_runningMove 1s linear infinite both;
+  }
+}
+
+/*左腿动*/
+@keyframes l_runningMove {
+  0% {
+    transform: translateY(.1rem);
+  }
+  50% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(-.1rem);
+  }
+}
+
+/*右腿动*/
+@keyframes r_runningMove {
+  0% {
+    transform: translateY(-.1rem);
+  }
+  50% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(.1rem);
+  }
+}
+
+@keyframes joinMove {
+  0% {
+    transform: translateY(5rem) scale(0.1);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.progress {
+  width: 100%;
+  height: 1rem;
+  position: relative;
+
+  transition: .5s;
+  animation: flowMove .5s ease both;
+
+  .outer {
+    width: 5.5rem;
+    height: .4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -5.5/2rem;
+    margin-top: -.4/2rem;
+    background: #fff;
+    border-radius: .4rem;
+
+    .inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3rem;
+      height: .4rem;
+      border-radius: .4rem;
+
+      transition: .3s;
+      background: -webkit-linear-gradient(left bottom, #ccc 0%, #ccc 25%, #eee 25%, #eee 50%, #ccc 50%, #ccc 75%, #eee 75%, #eee 100%);
+      background-size: .4rem .4rem;
+      animation: loadingMove .5s linear infinite both;
+    }
+  }
+}
+
+/*大白(●—●)飞入*/
+@keyframes flowMove {
+  0% {
+    transform: translateY(5rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+/*loading加载动画*/
+@keyframes loadingMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -.4rem;
+  }
+}

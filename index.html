@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--<script src="js/less-2.5.3.min.js"></script>-->
+</head>
+<body>
+<main class="mainBox">
+    <!----------加载页---------->
+    <section class="loading">
+        <!-------slogan标语------>
+        <div class="slogan">
+            <p class="title">Hello I'm bayMax</p>
+            <p class="title">欢迎您的到来</p>
+        </div>
+        <!--------大白全身-------->
+        <div class="bayMax">
+            <!------头部（眼睛、嘴巴）------>
+            <div class="head">
+                <div class="left_eye"></div>
+                <div class="right_eye"></div>
+                <div class="mouth"></div>
+            </div>
+            <!--------身躯（心脏）--------->
+            <div class="stature">
+                <div class="heart"></div>
+            </div>
+            <!-- 肚子\包括cover和躯干的连接处-->
+            <div class="belly">
+                <div class="cover"></div>
+            </div>
+            <!------左臂（大小两个手指）----->
+            <div class="left_arm">
+                <div class="l_big_finger"></div>
+                <div class="l_small_finger"></div>
+            </div>
+            <!------右臂（大小两个手指）----->
+            <div class="right_arm">
+                <div class="r_big_finger"></div>
+                <div class="r_small_finger"></div>
+            </div>
+            <!------------左腿------------->
+            <div class="left_leg"></div>
+            <!------------右腿------------->
+            <div class="right_leg"></div>
+        </div>
+        <!--------进度条加载------->
+        <div class="progress">
+            <div class="outer">
+                <div class="inner"></div>
+            </div>
+        </div>
+        <audio src="audio/baymaxinterduce.mp3" preload="none" id="bellAudio"></audio>
+    </section>
+    <!----------轮盘页---------->
+    <section class="panelPage">
+        <div class="panel-title">
+            <span>点“抽奖”,进页面,了解我</span>
+        </div>
+        <div id="bg" class="panelTurn">
+            <img src="./img/pointer.png" alt="pointer">
+            <img src="./img/turnTB.png" alt="turntable">
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide first">
+                    <p>Hello World</p>
+                </div>
+                <div class="swiper-slide second">
+                    <p>程序猿！攻城狮？！</p>
+                </div>
+                <div class="swiper-slide third">
+                    <p>灵魂“码农”</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <audio src="audio/music.mp3" preload="none" id="music"></audio>
+    </section>
+    <!----------详情页---------->
+    <section class="detailPage">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide page1">
+                    <dl id="makisuBox">
+                        <dt class="page1_title">个人信息展</dt>
+                        <dd>
+                            <em>Num.<span>01</span></em>
+                            <p>本人：李义超</p>
+                        </dd>
+                        <dd>
+                            <em>Num.<span>02</span></em>
+                            <p>摩羯座男一枚</p>
+                        </dd>
+                        <dd>
+                            <em>Num.<span>03</span></em>
+                            <p>我25岁,脸上都有褶子了</p>
+                        </dd>
+                        <dd>
+                            <em>Num.<span>04</span></em>
+                            <p>河北科技师范学院,计算机专业,IT男</p>
+                        </dd>
+                        <dd>
+                            <em>Num.<span>05</span></em>
+                            <p>学历本科,不高。有点想考研的冲动</p>
+                        </dd>
+                        <dd>
+                            <em>Num.<span>06</span></em>
+                            <p>工作两年,积累了宝贵的工作经验</p>
+                        </dd>
+                        <dd>
+                            <em>Num.<span>07</span></em>
+                            <p>河北衡水人,不是衡水中学毕业的</p>
+                        </dd>
+                        <dd>
+                            <em>Num.<span>08</span></em>
+                            <p>915105421@qq.com</p>
+                        </dd>
+                        <dd>
+                            <em>Num.<span>09</span></em>
+                            <p>电话北京联通号:18513227647</p>
+                        </dd>
+                        <dd>
+                            <em>Num.<span>10</span></em>
+                            <p>做事要有想法,因为这是行动的关键</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide page2">
+                    <h3 class="page2_title">项目与经历</h3>
+                    <div class="page2_show">
+                        <span>2016.3~2017.12</span>
+                    </div>
+                    <div class="tip"></div>
+                    <div class="introduce">就职北京中视广信科技有限公司,所属于互联网业务部,与央视网 进行项目生产合作。</div>
+                </div>
+                <div class="swiper-slide page3">
+                    <h4 class="page3_title">个人技术栈</h4>
+                    <div class="page3_show">
+                        <div>HTML(5)</div>
+                        <div>CSS(3)</div>
+                        <div>JS</div>
+                        <div>ES6</div>
+                        <div>jQuery</div>
+                        <div>Zepto</div>
+                        <div>Vue</div>
+                        <div>React</div>
+                        <div>Node</div>
+                    </div>
+                </div>
+                <div class="swiper-slide page4">
+                    <h3 class="page4_title">兴趣与爱好</h3>
+                    <div class="music">更爱听音乐,放松身心</div>
+                    <div class="pingBox">
+                        <div class="ping-pang">
+                            <img src="./img/pingpang.jpg" alt="乒乓">
+                        </div>
+                        <p class="ping-title">国球我也爱好</p>
+                    </div>
+                    <div class="walkBox">
+                        <div class="walk">
+                            <img src="./img/walk.gif" alt="散步">
+                        </div>
+                        <p class="walk-title">散步强体魄</p>
+                    </div>
+                </div>
+                <div class="swiper-slide page5">
+                    <h3 class="page5_title">道德与操守</h3>
+                    <article class="page5_content">
+                        <div class="top">
+                            <b>良好的沟通能力,协调能力,团队合作能力</b>
+                            <b>具备清晰的思路,合理的做事方式和处理问题的方法,较强的动手能力</b>
+                        </div>
+                        <div class="bottom">
+                            <b>工作热情积极，勤恳踏实，责任心强，具有较高的敬业精神</b>
+                            <b>具备较强的自学能力和适应能力</b>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <audio src="audio/myDream.m4a" preload="none" id="musicAudio"></audio>
+    </section>
+</main>
+</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/makisu.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="js/index.js"></script>
+<!--<script>
+  let swiperExample=new Swiper(".swiper-container",{
+    direction:"vertical",
+    effect:"cube",
+    loop:true,
+    watchSlidesProgress:true
+  })
+</script>-->
+
