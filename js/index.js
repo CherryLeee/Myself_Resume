@@ -162,7 +162,7 @@ let detailRender = (function ($) {
   return {
     init: function (index=0) {
       $detailPage.css("display", "block");
-      musicAudio.play();
+      // musicAudio.play();
 
       swiperExample = new Swiper(".detailPage .swiper-container", {
         effect: "coverflow",
